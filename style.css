@@ -1,0 +1,95 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+
+}
+span{
+    color: #6200ee;
+}
+h1{
+    font-size: 4rem;
+}
+.intro{
+    text-align: center;
+}
+.player-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1.25rem;
+}
+.player-display div {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    background-color: #3700B3;
+    color: white;
+    border-radius: 5px;
+    width: 20%;
+    margin: auto;    
+}
+form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 40%;
+    height: 40px;
+    border: none;
+    
+}
+.btn{
+    text-align: center;
+    background-color:#03DAC5;
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
+}
+.gameboard{
+    display:grid;
+    grid-template-columns: repeat(3,80px);
+    grid-template-rows: repeat(3,80px);
+    margin: 0 auto;
+    width: 20%;
+    margin-bottom: 2rem;
+}
+
+.cell{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top: none;
+}
+.cell:nth-child(3n+1){
+    border-left: none;
+}
+.cell:nth-child(3n+3){
+    border-right: none;
+}
+.cell:last-child,
+.cell:nth-child(7),
+.cell:nth-child(8){
+    border-bottom: none;
+}
+.results{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #6200ee;
+}
+.currentPlay{
+    box-shadow: 3px 3px 5px 6px #2B2D2F;
+}
